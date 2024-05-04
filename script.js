@@ -117,11 +117,15 @@ btnanimation()
 
 var tl2 = gsap.timeline({
    scrollTrigger: {
-      trigger: ".page1 h1",
-      scroller: ".main",
+      trigger: ".page2 ",
+      scroller: "body",
       // markers:true,
-      start: "top 50%",
+      start: "top 70%",
       end: "top 0%",
-      scrub: 3
+      scrub: 1
    }
 })
+tl2.to(".nav", {
+   opacity:0,
+   y:-100
+},)
